@@ -524,6 +524,26 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 
 <Route author="everyonus" example="/hentaimama/videos" path="/hentaimama/videos" />
 
+## IBC 岩手放送
+
+### イヤーマイッタマイッタ
+
+<Route author="fengkx" example="/ibc/maitta" path="/ibc/maitta" supportPodcast="1" radar="1"/>
+
+### ラジオ
+
+<Route author="nczitzk" example="/ibc/radio/maitta" path="/ibc/radio/:id?" :paramsDesc="['节目 id, 可在节目页 URL 中找到，默认为 イヤーマイッタマイッタ']" supportPodcast="1">
+
+::: tip 提示
+
+若订阅 [イヤーマイッタマイッタ](https://www.ibc.co.jp/radio/maitta/audio)，网址为 <https://www.ibc.co.jp/radio/maitta/audio>。截取 `https://www.ibc.co.jp/radio/` 到末尾的部分 `/audio/` 之间的 `maitta` 作为参数，此时路由为 [`/ibc/radio/maitta`](https://rsshub.app/ibc/radio/maitta)。
+
+若订阅 [火曜ワイド「境界トラブル解決ラジオ！」](https://www.ibc.co.jp/radio/TochiKyokai/audio)，网址为 <https://www.ibc.co.jp/radio/TochiKyokai/audio>。截取 `https://www.ibc.co.jp/radio/` 到末尾的部分 `/audio/` 之间的 `TochiKyokai` 作为参数，此时路由为 [`/ibc/radio/TochiKyokai`](https://rsshub.app/ibc/radio/TochiKyokai)。
+
+:::
+
+</Route>
+
 ## JavBus
 
 ::: tip 提示
@@ -960,7 +980,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 <https://javdb.c
 
 ### 指定剧集
 
-<Route author="nczitzk" example="/newzmz/view/qEzRyY3v" path="/newzmz/view/:id?" :paramsDesc="['剧集 id，可在剧集下载页 URL 中找到']">
+<Route author="nczitzk" example="/newzmz/qEzRyY3v" path="/newzmz/:id?" :paramsDesc="['剧集 id，可在剧集下载页 URL 中找到']">
 
 如：雪国列车（剧版）的下载页 URL 为 `https://ysfx.tv/view/qEzRyY3v.html`，即剧集 id 为 `qEzRyY3v`。
 
@@ -1356,12 +1376,6 @@ JavDB 有多个备用域名，本路由默认使用永久域名 <https://javdb.c
 | 0        | 1        |
 
 </Route>
-
-## 播客 IBC 岩手放送｜ IBC ラジオ　イヤーマイッタマイッタ
-
-### IBC 岩手放送｜ IBC ラジオ　イヤーマイッタマイッタ
-
-<Route author="fengkx" example="/maitta" path="/maitta" supportPodcast="1" />
 
 ## 草榴社区
 

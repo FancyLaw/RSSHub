@@ -362,6 +362,12 @@ pageClass: routes
 由于学校官网对非大陆 IP 的访问存在限制，需自行部署。
 :::
 
+## 北京协和医学院
+
+### “4+4” 试点班招生网通知公告
+
+<Route author="nczitzk" example="/pumc/mdadmission" path="/pumc/mdadmission"/>
+
 ## 北京邮电大学
 
 ### 硕士研究生招生通知
@@ -1424,6 +1430,12 @@ category 列表：
 jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS_REJECT_UNAUTHORIZED = 0
 :::
 
+## 湖南大学
+
+### 校园招聘
+
+<Route author="ningyougan" example="/hnu/careers" path="/hnu/careers"/>
+
 ## 湖南科技大学
 
 ### 教务处通知
@@ -2401,6 +2413,24 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 | 规章制度 | 专业建设 | 实践教学 | 支部风采 | 服务指南 | 教务要闻 | 工作通知 | 教务简报 | 常用下载 |
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
 | gzzd     | zyjs     | sjjx     | zbfc     | fwzn     | jwyw     | gztz     | jwjb     | cyxz     |
+
+</Route>
+
+## 山东科技大学
+
+### 研究生招生网
+
+<Route author="nczitzk" example="/sdust/yjsy/zhaosheng" path="/sdust/yjsy/zhaosheng/:id?" :paramsDesc="['栏目 id，见下表，默认为通知公告']">
+
+栏目
+
+| 招生简章 | 专业目录 | 往届录取 | 管理规定 | 资料下载 |
+| -------- | -------- | -------- | -------- | -------- |
+| zsjz     | zyml     | wjlq     | glgd     | zlxz     |
+
+| 通知公告 | 博士招生 | 硕士招生 | 推免生招生 | 招生宣传 |
+| -------- | -------- | -------- | ---------- | -------- |
+| tzgg     | bszs     | sszs     | tms        | zsxc     |
 
 </Route>
 
@@ -3720,3 +3750,17 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 ### 数据科学与计算机学院动态
 
 <Route author="Neutrino3316 MegrezZhu nczitzk" example="/sysu/cse" path="/sysu/cse"/>
+
+### 粤港澳发展研究院
+
+<Route author="TonyRL" example="/sysu/ygafz" path="/sysu/ygafz/:type?" :paramsDesc="['分类，见下表，默认为 `notice`']" radar="1" puppeteer="1">
+
+| 人才招聘   | 人才培养      | 新闻动态 | 通知公告 | 专家观点 |
+| ---------- | ------------- | -------- | -------- | -------- |
+| jobopening | personnelplan | news     | notice   | opinion  |
+
+| 研究成果 | 研究论文 | 学术著作 | 形势政策 |
+| -------- | -------- | -------- | -------- |
+| results  | papers   | writings | policy   |
+
+</Route>
